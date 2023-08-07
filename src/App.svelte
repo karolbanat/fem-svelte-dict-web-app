@@ -6,9 +6,8 @@
 	<link rel="stylesheet" href="./css/themes/system-theme.css" />
 </svelte:head>
 
-<main>
-	<Header />
-</main>
+<Header />
+<main />
 
 <style>
 </style>
