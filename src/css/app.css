@@ -1,0 +1,234 @@
+/* Fonts generated with: https://gwfh.mranftl.com/fonts/ */
+/* inconsolata-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Inconsolata';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/assets/fonts/inconsolata-v31-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inconsolata-700 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Inconsolata';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/assets/fonts/inconsolata-v31-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/assets/fonts/inter-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/assets/fonts/inter-v12-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lora-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Lora';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/assets/fonts/lora-v32-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lora-700 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Lora';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/assets/fonts/lora-v32-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lora-700italic - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Lora';
+	font-style: italic;
+	font-weight: 700;
+	src: url('/assets/fonts/lora-v32-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* reset */
+/* https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Remove list styles on ul, ol elements, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* Custom properties setup */
+:root {
+	/* colours */
+	/* -- accent hsl */
+	--clr-accent-400-hsl: 274deg, 82%, 60%;
+	/* -- accent */
+	--clr-accent-200: hsl(var(--clr-accent-400-hsl), 0.25);
+	--clr-accent-400: hsl(var(--clr-accent-400-hsl), 1);
+
+	/* -- neutral hsl */
+	--clr-neutral-100-hsl: 0deg, 0%, 100%;
+	--clr-neutral-600-hsl: 0deg, 0%, 18%;
+	--clr-neutral-900-hsl: 0deg, 0%, 0%;
+	/* -- neutral */
+	--clr-neutral-100: hsl(var(--clr-neutral-100-hsl), 1);
+	--clr-neutral-125: hsl(var(--clr-neutral-100-hsl), 0.25);
+	--clr-neutral-200: hsl(0deg 0% 96%);
+	--clr-neutral-300: hsl(0deg 0% 91%);
+	--clr-neutral-400: hsl(0deg 0% 51%);
+	--clr-neutral-500: hsl(0deg 0% 23%);
+	--clr-neutral-600: hsl(var(--clr-neutral-600-hsl), 1);
+	--clr-neutral-625: hsl(var(--clr-neutral-600-hsl), 0.25);
+	--clr-neutral-700: hsl(0deg 0% 12%);
+	--clr-neutral-800: hsl(0deg 0% 2%);
+	--clr-neutral-900: hsl(var(--clr-neutral-900-hsl), 1);
+
+	/* font */
+	/* -- font families */
+	--ff-sans: 'Inter', sans-serif;
+	--ff-serif: 'Lora', serif;
+	--ff-mono: 'Inconsolata', monospace;
+
+	/* -- font sizes */
+	--fz-200: 0.875rem;
+	--fz-300: 0.875rem;
+	--fz-400: 0.9375rem;
+	--fz-500: 1rem;
+	--fz-600: 1.125rem;
+	--fz-700: 2rem;
+
+	/* border radiuses */
+	--borr-400: 1rem;
+	--borr-pill: 100vmax;
+	--borr-circle: 50%;
+
+	/* spacers */
+	/* -- rem */
+	--spacer-rem-100: 0.25rem;
+	--spacer-rem-200: 0.5rem;
+	--spacer-rem-300: 0.75rem;
+	--spacer-rem-400: 1rem;
+	--spacer-rem-500: 1.25rem;
+	--spacer-rem-600: 1.5rem;
+	--spacer-rem-700: 1.75rem;
+	--spacer-rem-800: 2rem;
+
+	/* -- em */
+	--spacer-em-100: 0.25em;
+	--spacer-em-200: 0.5em;
+	--spacer-em-300: 0.75em;
+	--spacer-em-400: 1em;
+	--spacer-em-500: 1.25em;
+	--spacer-em-600: 1.5em;
+	--spacer-em-700: 1.75em;
+	--spacer-em-800: 2em;
+}
+
+@media only screen and (min-width: 36rem) {
+	:root {
+		--fz-300: 1.125rem;
+		--fz-400: 1.125rem;
+		--fz-500: 1.25rem;
+		--fz-600: 1.5rem;
+		--fz-700: 4rem;
+	}
+}
+
+body {
+	background-color: var(--clr-bg-body);
+	color: var(--clr-body);
+	font-size: var(--fz-400);
+}
+/* Utility */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/* Layout */
+.container {
+	--max-width: 69.375rem;
+	--padding-inline: 1.5rem;
+	margin-inline: auto;
+	width: min(var(--max-width), 100% - 2 * var(--padding-inline));
+}
+
+.flow > * + * {
+	margin-top: var(--flow-spacer, 1em);
+}

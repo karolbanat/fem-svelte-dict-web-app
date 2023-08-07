@@ -1,0 +1,10 @@
+:root {
+	--clr-bg-body: var(--clr-neutral-100);
+	--clr-bg-dropdown: var(--clr-neutral-100);
+	--clr-dropdown-shadow: var(--clr-neutral-910);
+	--clr-bg-input: var(--clr-neutral-200);
+
+	--clr-body: var(--clr-neutral-600);
+	--clr-search-placeholder: var(--clr-neutral-625);
+	--clr-section-line: var(--clr-neutral-300);
+}
