@@ -159,6 +159,11 @@ select {
 	--ff-sans: 'Inter', sans-serif;
 	--ff-serif: 'Lora', serif;
 	--ff-mono: 'Inconsolata', monospace;
+	--ff-current: var(--ff-sans);
+
+	/* -- font weights */
+	--fw-normal: 400;
+	--fw-bold: 700;
 
 	/* -- font sizes */
 	--fz-200: 0.875rem;
@@ -183,6 +188,7 @@ select {
 	--spacer-rem-600: 1.5rem;
 	--spacer-rem-700: 1.75rem;
 	--spacer-rem-800: 2rem;
+	--spacer-rem-900: 2.5rem;
 
 	/* -- em */
 	--spacer-em-100: 0.25em;
@@ -209,6 +215,7 @@ body {
 	background-color: var(--clr-bg-body);
 	color: var(--clr-body);
 	font-size: var(--fz-400);
+	font-family: var(--ff-current);
 }
 /* Utility */
 .visually-hidden {
@@ -219,14 +226,6 @@ body {
 	height: 1px;
 	overflow: hidden;
 	white-space: nowrap;
-}
-
-/* Layout */
-.container {
-	--max-width: 69.375rem;
-	--padding-inline: 1.5rem;
-	margin-inline: auto;
-	width: min(var(--max-width), 100% - 2 * var(--padding-inline));
 }
 
 .flow > * + * {
