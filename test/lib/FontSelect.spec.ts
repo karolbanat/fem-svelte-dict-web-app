@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/svelte';
-import FontSelect__SvelteComponent_ from './FontSelect.svelte';
+import FontSelect__SvelteComponent_ from '../../src/lib/FontSelect.svelte';
 
 describe('Font Select', () => {
 	test('Should render FontSelect component', () => {

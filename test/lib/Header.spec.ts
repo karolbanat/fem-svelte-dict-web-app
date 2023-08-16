@@ -1,6 +1,6 @@
 import { describe, test, expect } from 'vitest';
 import { render } from '@testing-library/svelte';
-import Header__SvelteComponent_ from './Header.svelte';
+import Header__SvelteComponent_ from '../../src/lib/Header.svelte';
 
 describe('Header Component', () => {
 	test('Should render logo', () => {
