@@ -1,5 +1,6 @@
 import { get } from 'svelte/store';
 import './mocks/matchMedia.mock';
+import './mocks/localStorage.mock';
 import { preferences, update } from '../src/stores';
 
 describe('Preferences store', () => {
@@ -28,5 +29,10 @@ describe('Preferences store', () => {
 
 		update(state => ({ ...state, theme: 'dark' }));
 		expect(get(preferences).theme).toEqual('dark');
+	});
+
+	test('Should load preferences from localStorage', () => {
+		expect(window.localStorage.getItem).toBeCalled();
+		expect(window.localStorage.getItem).toBeCalledTimes(1);
 	});
 });

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1692098866376" clover="3.2.0">
-  <project timestamp="1692098866376" name="All files">
-    <metrics statements="200" coveredstatements="200" conditionals="10" coveredconditionals="8" methods="3" coveredmethods="3" elements="213" coveredelements="211" complexity="0" loc="200" ncloc="200" packages="2" files="5" classes="5"/>
+<coverage generated="1692167588951" clover="3.2.0">
+  <project timestamp="1692167588951" name="All files">
+    <metrics statements="189" coveredstatements="189" conditionals="6" coveredconditionals="4" methods="1" coveredmethods="1" elements="196" coveredelements="194" complexity="0" loc="189" ncloc="189" packages="2" files="4" classes="4"/>
     <package name="src">
-      <metrics statements="20" coveredstatements="20" conditionals="3" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <metrics statements="23" coveredstatements="23" conditionals="6" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="stores.ts" path="C:\Users\Karol\OneDrive\Pulpit\Personal web pages\Frontendmentor projects\Svelte\Intermediate\fem-svelte-dict-web-app\src\stores.ts">
-        <metrics statements="20" coveredstatements="20" conditionals="3" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <metrics statements="23" coveredstatements="23" conditionals="6" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -15,23 +15,26 @@
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="18" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="19" count="4" type="stmt"/>
-        <line num="20" count="4" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.lib">
-      <metrics statements="180" coveredstatements="180" conditionals="7" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <metrics statements="166" coveredstatements="166" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="FontSelect.svelte" path="C:\Users\Karol\OneDrive\Pulpit\Personal web pages\Frontendmentor projects\Svelte\Intermediate\fem-svelte-dict-web-app\src\lib\FontSelect.svelte">
-        <metrics statements="130" coveredstatements="130" conditionals="7" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <metrics statements="130" coveredstatements="130" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -56,20 +59,20 @@
         <line num="22" count="1" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
-        <line num="25" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="25" count="1" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
         <line num="27" count="1" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
-        <line num="29" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="29" count="1" type="stmt"/>
         <line num="30" count="1" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
         <line num="33" count="1" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
-        <line num="35" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="36" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
-        <line num="38" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="38" count="1" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
@@ -80,7 +83,7 @@
         <line num="46" count="1" type="stmt"/>
         <line num="47" count="1" type="stmt"/>
         <line num="48" count="1" type="stmt"/>
-        <line num="49" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="49" count="1" type="stmt"/>
         <line num="50" count="1" type="stmt"/>
         <line num="51" count="1" type="stmt"/>
         <line num="52" count="1" type="stmt"/>
@@ -204,23 +207,6 @@
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
-      </file>
-      <file name="Wrapper.svelte" path="C:\Users\Karol\OneDrive\Pulpit\Personal web pages\Frontendmentor projects\Svelte\Intermediate\fem-svelte-dict-web-app\src\lib\Wrapper.svelte">
-        <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
       </file>
     </package>
   </project>
