@@ -1,5 +1,6 @@
 import { describe, test, expect } from 'vitest';
 import { render } from '@testing-library/svelte';
+import '../mocks/matchMedia.mock';
 import Header__SvelteComponent_ from '../../src/lib/Header.svelte';
 
 describe('Header Component', () => {
