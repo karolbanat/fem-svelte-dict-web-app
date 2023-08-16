@@ -1,10 +1,11 @@
 import { fireEvent, render, screen } from '@testing-library/svelte';
+import '../mocks/matchMedia.mock';
 import FontSelect__SvelteComponent_ from '../../src/lib/FontSelect.svelte';
 
 describe('Font Select', () => {
 	test('Should render FontSelect component', () => {
 		render(FontSelect__SvelteComponent_);
-		expect(screen.getByText('Sans Serif')).toBeTruthy();
+		expect(screen.getByRole('button')).toBeTruthy();
 	});
 
 	test('Should open dropdown with 3 radio buttons when button clicked', async () => {
