@@ -8,4 +8,10 @@
 	<ThemeSwitch />
 </form>
 
-<style></style>
+<style>
+	form {
+		display: flex;
+		align-items: center;
+		gap: var(--spacer-rem-500);
+	}
+</style>
