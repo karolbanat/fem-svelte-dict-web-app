@@ -1,5 +1,7 @@
 <script lang="ts">
+	import DictApp from './lib/DictApp.svelte';
 	import Header from './lib/Header.svelte';
+	import Wrapper from './lib/Wrapper.svelte';
 	import { preferences } from './stores';
 </script>
 
@@ -8,7 +10,11 @@
 </svelte:head>
 
 <Header />
-<main />
+<main>
+	<Wrapper>
+		<DictApp />
+	</Wrapper>
+</main>
 
 <style>
 </style>
