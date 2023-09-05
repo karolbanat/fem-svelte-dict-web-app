@@ -136,6 +136,7 @@ select {
 	/* -- accent */
 	--clr-accent-200: hsl(var(--clr-accent-400-hsl), 0.25);
 	--clr-accent-400: hsl(var(--clr-accent-400-hsl), 1);
+	--clr-error: hsl(0deg 100% 66%);
 
 	/* -- neutral hsl */
 	--clr-neutral-100-hsl: 0deg, 0%, 100%;

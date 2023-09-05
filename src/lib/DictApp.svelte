@@ -1,9 +1,17 @@
 <script lang="ts">
+	import { currentWord } from '../stores';
 	import SearchForm from './SearchForm.svelte';
+	import Word from './Word.svelte';
+	$: console.log($currentWord);
 </script>
 
 <section>
 	<SearchForm />
+	{#if $currentWord instanceof Array}
+		{#each $currentWord as word}
+			<Word {word} />
+		{/each}
+	{:else}{/if}
 </section>
 
 <style>
