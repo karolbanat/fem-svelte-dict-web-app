@@ -93,6 +93,7 @@
 
 	.font-options {
 		position: absolute;
+		z-index: 100;
 		top: calc(100% + var(--spacer-rem-400));
 		right: 0;
 		display: grid;
