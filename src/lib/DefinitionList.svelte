@@ -12,4 +12,18 @@
 		</li>{/each}
 </ul>
 
-<style></style>
+<style>
+	li {
+		margin-inline-start: 0.9em;
+		padding-inline-start: var(--spacer-rem-500);
+	}
+
+	li:not(:last-child) {
+		margin-block-end: var(--spacer-rem-300);
+	}
+
+	li::marker {
+		color: var(--clr-accent-400);
+		font-size: inherit;
+	}
+</style>

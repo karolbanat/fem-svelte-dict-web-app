@@ -219,6 +219,7 @@ body {
 	font-size: var(--fz-400);
 	font-family: var(--ff-current);
 }
+
 /* Utility */
 .visually-hidden {
 	clip: rect(0 0 0 0);

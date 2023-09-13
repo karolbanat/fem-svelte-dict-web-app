@@ -7,8 +7,14 @@
 <div>
 	<p>{definition.definition}</p>
 	{#if definition.example}
-		<p>{definition.example}</p>
+		<q>{definition.example}</q>
 	{/if}
 </div>
 
-<style></style>
+<style>
+	q {
+		display: inline-block;
+		margin-block-start: var(--spacer-rem-300);
+		color: var(--clr-neutral-400);
+	}
+</style>
