@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { currentWord } from '../stores';
+	import DefinitionNotFound from './DefinitionNotFound.svelte';
 	import SearchForm from './SearchForm.svelte';
 	import Word from './Word.svelte';
 </script>
@@ -10,7 +11,9 @@
 		{#each $currentWord as word}
 			<Word {word} />
 		{/each}
-	{:else}{/if}
+	{:else}
+		<DefinitionNotFound data={$currentWord} />
+	{/if}
 </section>
 
 <style>
