@@ -1,5 +1,5 @@
 export interface Phonetics {
-	text: string;
+	text?: string;
 	audio: string;
 	sourceUrl?: string;
 }
@@ -20,7 +20,7 @@ export interface Meaning {
 
 export interface SuccessData {
 	word: string;
-	phonetic: string;
+	phonetic?: string;
 	phonetics: Phonetics[];
 	sourceUrls: string[];
 	meanings: Meaning[];

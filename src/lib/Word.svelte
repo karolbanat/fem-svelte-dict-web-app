@@ -1,14 +1,24 @@
 <script lang="ts">
 	import type { SuccessData } from '../types';
+	import { getPhonetic } from '../utils/word';
+	import Audio from './Audio.svelte';
 	import Meaning from './Meaning.svelte';
 
 	export let word: SuccessData;
+	$: phonetic = getPhonetic(word);
 </script>
 
 <article>
 	<header>
-		<h3>{word.word}</h3>
-		<p class="phonetic">{word.phonetic}</p>
+		<div>
+			<h3>{word.word}</h3>
+			{#if phonetic.text}
+				<p class="phonetic">{phonetic.text}</p>
+			{/if}
+		</div>
+		{#if phonetic.audio}
+			<Audio path={phonetic.audio} />
+		{/if}
 	</header>
 
 	{#each word.meanings as meaning}
@@ -33,6 +43,12 @@
 		display: grid;
 		gap: clamp(var(--spacer-rem-800), 1rem + 3vw, var(--spacer-rem-900));
 		margin-block-start: clamp(var(--spacer-rem-600), 6.25vw, var(--spacer-rem-900));
+	}
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	h3 {
