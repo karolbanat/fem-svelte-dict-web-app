@@ -6,6 +6,7 @@
 </script>
 
 <section>
+	<h2 class="visually-hidden">Search for word</h2>
 	<SearchForm />
 	{#if $currentWord instanceof Array}
 		{#each $currentWord as word}
