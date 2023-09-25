@@ -4,7 +4,7 @@ This is a solution to the [Dictionary web app challenge on Frontend Mentor](http
 
 ## Links
 
-- Solution URL: [Frontend Mentod Solution Page](https://your-solution-url.com)
+- Solution URL: [Frontend Mentod Solution Page](https://www.frontendmentor.io/solutions/dictionary-web-app-CgyZVjGmLz)
 - Live Site URL: [Github Pages Site](https://karolbanat.github.io/fem-svelte-dict-web-app/)
 
 ## Built with
