@@ -17,4 +17,7 @@
 </main>
 
 <style>
+	main {
+		padding-block-end: var(--spacer-rem-800, 2em);
+	}
 </style>
