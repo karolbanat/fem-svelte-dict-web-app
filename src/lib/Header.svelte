@@ -6,7 +6,7 @@
 <Wrapper>
 	<header>
 		<h1 class="visually-hidden">Dictionary Web App</h1>
-		<a href="/"><img src="assets/images/logo.svg" alt="Home page" /></a>
+		<a href="#"><img src="assets/images/logo.svg" alt="Home page" /></a>
 		<Preferences />
 	</header>
 </Wrapper>
