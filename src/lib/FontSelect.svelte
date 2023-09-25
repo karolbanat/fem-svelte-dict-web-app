@@ -113,6 +113,11 @@
 		cursor: pointer;
 	}
 
+	input[type='radio']:is(:hover, :focus) + label,
+	label:is(:hover, :focus) {
+		color: var(--clr-accent-400);
+	}
+
 	input[type='radio']:checked + label {
 		color: var(--clr-accent-400);
 	}
