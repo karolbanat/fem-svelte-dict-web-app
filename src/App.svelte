@@ -7,6 +7,7 @@
 
 <svelte:head>
 	<link rel="stylesheet" href={`./css/themes/${$preferences.theme}-theme.css`} />
+	<link rel="stylesheet" href={`./css/fonts/${$preferences.font}-font.css`} />
 </svelte:head>
 
 <Header />
