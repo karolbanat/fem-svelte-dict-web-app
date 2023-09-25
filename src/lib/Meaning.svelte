@@ -37,6 +37,7 @@
 
 		font-size: var(--fz-600);
 		font-weight: var(--fw-bold, 700);
+		font-style: italic;
 	}
 
 	h4::after {
