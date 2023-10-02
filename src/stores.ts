@@ -4,12 +4,12 @@ import type { WordData } from './types';
 /* preferences store */
 interface Preferences {
 	font: 'sans' | 'serif' | 'mono';
-	theme: 'dark' | 'light';
+	darkThemeOn: boolean;
 }
 
 const defaultPreferences: Preferences = {
 	font: 'sans',
-	theme: window.matchMedia('(prefers-color-scheme: dark)') ? 'dark' : 'light',
+	darkThemeOn: window.matchMedia('(prefers-color-scheme: dark)') ? true : false,
 };
 
 const localPreferences: string = localStorage.getItem('preferences');

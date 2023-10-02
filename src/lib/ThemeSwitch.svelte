@@ -1,30 +1,15 @@
 <script lang="ts">
 	import { preferences, update } from '../stores';
 
-	function changeTheme(theme: string) {
-		update(state => ({ ...state, theme }));
+	function toggleTheme() {
+		update(state => ({ ...state, darkThemeOn: !$preferences.darkThemeOn }));
 	}
 </script>
 
 <div class="theme-container">
-	<div role="radiogroup" class="theme-switch" class:on={$preferences.theme === 'dark'}>
-		<label for="theme-light" class="visually-hidden">Light</label>
-		<input
-			type="radio"
-			name="theme-light"
-			id="theme-light"
-			checked={$preferences.theme === 'light'}
-			on:change={() => changeTheme('light')}
-		/>
-		<label for="theme-dark" class="visually-hidden">Dark</label>
-		<input
-			type="radio"
-			name="theme-dark"
-			id="theme-dark"
-			checked={$preferences.theme === 'dark'}
-			on:change={() => changeTheme('dark')}
-		/>
-	</div>
+	<button on:click={toggleTheme} type="button" role="switch" aria-checked={$preferences.darkThemeOn}>
+		<span class="visually-hidden">Dark theme: {$preferences.darkThemeOn ? 'on' : 'off'}</span>
+	</button>
 	<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
 		><path
 			fill="none"
@@ -38,53 +23,52 @@
 </div>
 
 <style>
-	.theme-container,
-	.theme-switch {
+	.theme-container {
 		display: flex;
 		align-items: center;
-	}
-
-	.theme-container {
 		gap: var(--spacer-rem-300);
 	}
 
-	.theme-switch {
+	[role='switch'] {
 		--transition-duration: 350ms;
-		--transition-delay: calc(var(--transition-duration) / 2);
+		--padding: var(--spacer-rem-100);
 
-		gap: var(--spacer-rem-100);
-		padding: var(--spacer-rem-100);
+		position: relative;
+		min-width: 2.5rem;
+		min-height: 1.325rem;
+
+		padding: var(--padding);
 
 		background-color: var(--clr-neutral-400);
+		border: none;
 		border-radius: var(--borr-pill);
+		cursor: pointer;
 
 		transition: background-color var(--transition-duration) ease-in-out;
 	}
 
-	.theme-switch.on {
+	[role='switch'][aria-checked='true'] {
 		background-color: var(--clr-accent-400);
 	}
 
-	input[type='radio'] {
-		appearance: none;
+	[role='switch']::before {
+		--size: 0.875rem;
 
-		margin: 0;
-		width: 0.875rem;
-		height: 0.875rem;
+		content: '';
+		position: absolute;
+		left: var(--padding);
+		top: var(--padding);
 
-		font: inherit;
-		color: currentColor;
-		background-color: transparent;
+		width: var(--size);
+		aspect-ratio: 1 / 1;
+
+		background-color: var(--clr-neutral-100);
 		border-radius: var(--borr-circle, 50%);
 
-		cursor: pointer;
-		transition: background-color var(--transition-duration) ease-in-out;
-	}
-	input[type='radio']:checked {
-		background-color: var(--clr-neutral-100);
+		transition: left var(--transition-duration) ease-in-out;
 	}
 
-	input[type='radio']:checked {
-		transition-delay: var(--transition-delay);
+	[role='switch'][aria-checked='true']::before {
+		left: calc(100% - var(--padding) - var(--size));
 	}
 </style>
